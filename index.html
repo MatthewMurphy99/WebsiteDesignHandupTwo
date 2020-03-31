@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!--	Name: Matthew Murphy
+	Year: 1
+	Date Created: 23/2/20
+	Description: Enniskillen Running Club Home Page -->
+
+<html lang=en>
+    <head>
+        <title>Home</title>
+	       <meta charset="utf-8"/>
+	       <meta name= "description" content=""/>
+	       <meta name="keywords" content="Running"/>
+	       <meta name ="author" content = "Matthew Murphy"/>
+        <link rel="stylesheet" href="Styles/Styling.css">
+    </head>
+    <body>
+        <header>
+            <div id="backgroundImage"></div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutScreen.html">About ERC</a></li>
+                <li><a href="ResultsScreen.html">Results</a></li>
+                <li><a href="FixturesScreen.html">Fixtures</a></li>
+                <li><a href="NewsScreen.html">Club News</a></li>
+            </ul>
+        </nav>
+    <main>
+            <p>We are a running club based in the county town of County Fermanagh.Our clubs captains for 2020 are Gerard Colton and Joan O'Kane with their deputies being Anthony Duffy and Heather Williams. We have runners of all abilities, ages and distance preferences. More information about us can be found on the <a href ="AboutScreen.html">About</a> page.</p>
+        
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="Images/homeScreenBodyImage.jpg" style="width:725; height: 315;">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/homeeScreenBI2.jpg" style="width:725; height: 315;">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/hsbi3.jpg" style="width:725; height: 315;">
+  </div>
+    
+    <div class="mySlides fade">
+    <img src="Images/hsbi4.jpg" style="width:725; height: 315;">
+   </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    
+        </div>
+        
+        <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000);
+}
+    </script>
+    </main>
+     
+    </body>
+    <footer>
+    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fenniskillenrc%2F&tabs=timeline&width=500&height=400&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="500" height="400" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </footer>
+</html>

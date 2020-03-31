@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<!--	Name: Matthew Murphy
+	Year: 1
+	Date Created: 23/2/20
+	Description: Enniskillen Running Club About Page -->
+
+<html lang=en>
+    <head>
+        <title>About</title>
+	       <meta charset="utf-8"/>
+	       <meta name= "description" content=""/>
+	       <meta name="keywords" content="Running"/>
+	       <meta name ="author" content = "Matthew Murphy"/>
+        <link rel="stylesheet" href="Styles/Styling.css">
+    </head>
+    <body>
+        <header>
+            <div id="backgroundImage"></div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutScreen.html">About ERC</a></li>
+                <li><a href="ResultsScreen.html">Results</a></li>
+                <li><a href="FixturesScreen.html">Fixtures</a></li>
+                <li><a href="NewsScreen.html">Club News</a></li>
+            </ul>
+        </nav>
+    <main>
+        <p>Here you will find all neccessary information about our club. If we do not have information on a query you may have, please message our Facebook page and we will answer your concern there.</p>
+        
+        <button class="accordion">Brief History</button>
+            <div class="panel">
+                <p>Enniskillen Running Club was founded in 2010, by a group of runners from the town and surrounding areas who wanted to meet up reguarly to run. Flashforward to today, and the club has over 100 members of all ages, abilities amd walks of life. We also hold our own race - "Enniskillen Spooktacular 5K" - every year on the last Friday before Halloween. We also in the last 5 years have ran a Couch To 5K programme biannually.</p>
+            </div>
+
+        <button class="accordion">Training Sessions</button>
+            <div class="panel">
+                <p>With ERC having members of all ages we hold training sessions nearly every day of the week. All sessions start off and finish at the Lakeland Forum. If you are in the seniors or masters (19+) section, we have sessions at 18:30 to 19:30 on a Monday and Thursday. On Mondays, we do speedwork workouts, and on Thursdays, we do interval training. Some members also meet at 09:00 on a Sunday morning, for a long slower paced run. As for juniors, it is split into two categories - primary school level, and secondary school level. For primary school kids, we organise a training session every Tuesday evening from 17:30-18:30. As for kids in secondary school, they meet every Thursday evening from 18:15 to 19:15. We would encourage if you are in secondary school that you also join your respective schools' cross country team. Please note as well we charge £1 for every training session.</p>
+            </div>
+
+        <button class="accordion">Membership</button>
+            <div class="panel">
+                <p>Membership for ERC is £25 which can be paid annually on our Klubfunder page. This fee covers you for insurance in case something were to happen to you, as well as discounts to some races and being eligible for trials at national and international level.</p>
+            </div>
+        
+        <button class="accordion">Spooktacular</button>
+            <div class="panel">
+                <p>We hold a race every year on the last Friday before Halloween called Enniskillen Spooktacular. With the race being 5K, anyone can participate. The race is one of the most popular 5Ks in the country reguarly attracting over 1500 participants.</p>
+            </div>
+       
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+          
+                this.classList.toggle("active");
+
+
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+            } 
+        </script>
+
+    </main>
+    </body>
+</html>
